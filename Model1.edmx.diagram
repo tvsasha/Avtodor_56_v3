@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="88612fc6a6874c83baf1bf8a9ddd02f6" Name="Diagram1">
+        <EntityTypeShape EntityType="Avtodor_56Model.Client" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.Employee" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.Materials" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.OrderDetails" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.OrderHistory" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.Orders" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.PurchaseDetails" Width="1.5" PointX="8.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.Purchases" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.Supplier" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Avtodor_56Model.User" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <AssociationConnector Association="Avtodor_56Model.FK__Orders__ClientID__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__Orders__Employee__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__Purchases__Emplo__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__User__EmployeeID__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__OrderDeta__Mater__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__OrderHist__Mater__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__PurchaseD__Mater__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__OrderDeta__Order__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__PurchaseD__Purch__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="Avtodor_56Model.FK__Purchases__Suppl__48CFD27E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

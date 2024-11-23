@@ -1,0 +1,69 @@
+﻿<Page x:Class="Avtodor_56_v3.OrdersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Управление Заказами" Height="330" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="170" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"  Orientation="Horizontal" Margin="10,5">
+            <TextBlock Text="Фильтр по статусу:" FontFamily="Century Gothic" VerticalAlignment="Center" FontSize="16" Margin="0,0,10,0" />
+            <ComboBox x:Name="FilterStatusComboBox" FontFamily="Century Gothic" FontSize="16" Width="150" Margin="0,0,10,0">
+                <ComboBoxItem Content="Все" IsSelected="True" />
+                <ComboBoxItem Content="В работе" />
+                <ComboBoxItem Content="Завершен" />
+                <ComboBoxItem Content="Ожидает" />
+            </ComboBox>
+            <Button Content="Применить" FontFamily="Century Gothic" Click="ApplyFilter_Click" FontSize="16" Width="100" />
+        </StackPanel>
+        <DataGrid x:Name="OrdersDataGrid" Grid.Row="1" AutoGenerateColumns="False" Margin="10"
+                  SelectionMode="Single" IsReadOnly="True" FontFamily="Century Gothic" FontSize="20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding OrderID}" Width="50" />
+                <DataGridTextColumn Header="Дата" Binding="{Binding OrderDate}" Width="100" />
+                <DataGridTextColumn Header="Сотрудник" Binding="{Binding EmployeeName}" Width="220" />
+                <DataGridTextColumn Header="Клиент" Binding="{Binding ClientName}" Width="220" />
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="140" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="2" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="5,3,5,0" VerticalAlignment="Bottom" Height="150">
+                <TextBlock Text="Дата заказа:" FontWeight="Bold" FontFamily="Century Gothic" FontSize="20" />
+                <DatePicker x:Name="OrderDatePicker" FontFamily="Century Gothic" FontSize="20" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="5,3,5,0" VerticalAlignment="Bottom" Height="150">
+                <TextBlock Text="Сотрудник:" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" />
+                <ComboBox x:Name="EmployeeComboBox" FontFamily="Century Gothic" FontSize="20" DisplayMemberPath="FullName" SelectedValuePath="EmployeeID" Height="29" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Margin="5,3,5,0" VerticalAlignment="Bottom" Height="150">
+                <TextBlock Text="Клиент:" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" />
+                <ComboBox x:Name="ClientComboBox" FontSize="20" FontFamily="Century Gothic" DisplayMemberPath="FullName" SelectedValuePath="ClientID" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="3" Margin="5,3,35,0" VerticalAlignment="Bottom" Height="150">
+                <TextBlock Text="Статус:" FontSize="20" FontFamily="Century Gothic" FontWeight="Bold" />
+                <ComboBox x:Name="StatusComboBox" FontSize="20" FontFamily="Century Gothic">
+                    <ComboBoxItem Content="В работе" />
+                    <ComboBoxItem Content="Завершен" />
+                    <ComboBoxItem Content="Ожидает" />
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="0,0,52,0">
+                <Button Click="AddOrder_Click" FontFamily="Century Gothic" FontSize="20" Content="Добавить" Width="100" Margin="5" />
+                <Button Click="EditOrder_Click" FontFamily="Century Gothic" FontSize="20" Content="Изменить" Width="100" Margin="5" />
+                <Button Click="DeleteOrder_Click" FontFamily="Century Gothic" FontSize="20" Content="Удалить" Width="100" Margin="5" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

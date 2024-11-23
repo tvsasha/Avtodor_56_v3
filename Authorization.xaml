@@ -1,0 +1,17 @@
+﻿<Window x:Class="Avtodor_56_v3.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Avtodor_56"
+        mc:Ignorable="d"
+        Title="Authorization" Height="350" Width="300">
+
+    <Grid>
+        <TextBox Name="tbL" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="20"  Height="35" Margin="85, 100, 0, 0 " Width="120" VerticalAlignment="Top" Text="" />
+        <TextBox  Name="tbP" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="20" Height="35" Margin="85, 150, 0, 0 " Width="120" VerticalAlignment="Top" Text="" />
+        <Button Content="Ok" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="20" Height="35" Margin="63,200,0,0" Width="82" VerticalAlignment="Top" Click="Button_Click1" />
+        <Button Content="Cancel" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="20" Height="35" Margin="160, 200, 0, 0 " Width="80" VerticalAlignment="Top"/>
+        <Button Content="Registr"  HorizontalAlignment="Center" FontFamily="Century Gothic" FontSize="20" Height="35" Margin="0,240,0,0" Width="92" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>
