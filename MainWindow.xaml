@@ -9,11 +9,11 @@
     <DockPanel>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" DockPanel.Dock="Top"  />
         <StatusBar VerticalAlignment="Bottom" Height="70">
-                <Image Source="Resources/home.png" Height="65" Width="65" Mouse.MouseDown="Home_Click" />
+            <Image Source="Resources/700686_normal.jpeg" Height="65" Width="65" Mouse.MouseDown="Home_Click" />
                 <Image Source="Resources/employee.png" Height="65" Width="65" Mouse.MouseDown="Employee_Click"></Image>
                 <Image Source="Resources/order.png" Height="65" Width="65" Mouse.MouseDown="Order_Click" ></Image>
-                <Image Source="Resources/material.png" Height="65" Width="65" Mouse.MouseDown="Material_Click" ></Image>
-                <StatusBarItem HorizontalAlignment="Right">
+            <Image Source="Resources/material.png" Height="65" Width="65" Mouse.MouseDown="Material_Click" ></Image>
+            <StatusBarItem HorizontalAlignment="Right">
                     <Image Source="Resources/logaut.png" Height="65" Width="65" Mouse.MouseDown="Logaut_Click" />
                 </StatusBarItem>
             </StatusBar>

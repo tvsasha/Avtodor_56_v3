@@ -344,6 +344,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\700686_normal.jpeg" />
     <Resource Include="Resources\logaut.png" />
     <Resource Include="Resources\order.png" />
     <Resource Include="Resources\material.png" />
